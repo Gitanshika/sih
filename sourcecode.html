@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hidden Explorer</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Hidden Explorer</h1>
+    <ul>
+      <button onclick="location.href='#Hero'"><li>Home</li></button>
+      <button onclick="location.href='#maps'"><li>Map</li></button>
+      <button onclick="location.href='#food'"><li>Food</li></button>
+      <button onclick="location.href='#hidden'"><li>Hidden</li></button>
+      <button onclick="location.href='#guide'"><li>Guide</li></button>
+
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="Hero">
+    <h2>Discover the Unseen</h2>
+    <p>Explore hidden gems, local food, and cultural treasures around you.</p>
+  </section>
+
+  <!-- Map Section -->
+  <section class="section" id="maps">
+    <h2>Explore on Map</h2>
+    <div id="map"></div>
+  </section>
+
+  <section class="section" id="guide">
+    <a href="guide.html" class="link">
+    <h2>Discover Jharkhand like Never Before</h2>
+    <img src="/home/anshi/anshika/sih/Screenshot 2025-09-07 at 16-43-55 Jharkhand Travel Guide.png">
+    </a>
+  </section>
+
+
+    <!-- Hidden Gems Section -->
+  <section class="section" id="hidden">
+    <h2>Hidden Gems Near You</h2>
+    <div class="cards">
+      <div class="card">
+         <a href="waterfall.html" class="link">
+        <h3>Secret Waterfall</h3>
+        <p>A breathtaking hidden waterfall </p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="ancientfort.html" class="link">
+        <h3>Ancient Fort</h3>
+        <p>Less-crowded heritage site rich with history.</p>
+        </a>
+      </div>
+      <div class="card">
+        <a href="local.html" class="link">
+        <h3>Local Market</h3>
+        <p>Shop authentic handicrafts and souvenirs.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Food Section -->
+  <section class="section" id="food">
+    <h2>Famous Food Nearby</h2>
+    <div class="cards" id="food-section"></div>
+  </section>
+
+  <div id="foodModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="foodTitle"></h2>
+      <p id="foodDesc"></p>
+      <div id="foodMap" class="modal-map"></div>
+    </div>
+  </div>
+  <script src="/home/anshi/anshika/sih/sourcecode.js">
+    
+  </script>
+
+  <!-- Google Maps Script -->
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVBgJvRjhM8Gg81x-cF6UstoPAR_3Fzms&libraries=places&callback=initMap">
+  </script>
+
+</body>
+</html>
+
+
+  
